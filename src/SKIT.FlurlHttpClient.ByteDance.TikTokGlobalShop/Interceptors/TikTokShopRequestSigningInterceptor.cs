@@ -82,7 +82,7 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.Interceptors
                 throw new TikTokShopException("Failed to sign request. Please see the inner exception for more details.", ex);
             }
 
-            context.FlurlCall.Request.SetQueryParam("sign", signature);
+            context.FlurlCall.Request.SetQueryParam("sign", signature.ToLower());
         }
     }
 }
