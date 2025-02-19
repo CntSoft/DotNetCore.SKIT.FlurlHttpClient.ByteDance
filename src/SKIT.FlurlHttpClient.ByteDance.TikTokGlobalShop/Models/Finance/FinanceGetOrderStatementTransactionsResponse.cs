@@ -925,4 +925,280 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.Models
             }
         }
     }
+    public class FinanceGetOrderStatementTransactions2501Response : TikTokShopResponse<FinanceGetOrderStatementTransactions2501Response.Types.Data>
+    {
+        public static class Types
+        {
+            public class Data
+            {
+                public static class Types
+                {
+                    public class Transaction
+                    {
+                        public static class Types
+                        {
+                            public class RevenueBreakdown
+                            {
+                                [Newtonsoft.Json.JsonProperty("subtotal_before_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("subtotal_before_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal ? SubtotalBeforeDiscountAmount { get; set; }
+                                /// <summary>
+                                /// seller_discount_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("seller_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("seller_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? SellerDiscountAmount { get; set; }
+                                /// <summary>
+                                /// refund_subtotal_before_discount_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("refund_subtotal_before_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("refund_subtotal_before_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? RefundSubtotalBeforeDiscountAmount { get; set; }
+                                /// <summary>
+                                /// seller_discount_refund_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("seller_discount_refund_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("seller_discount_refund_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? SellerDiscountRefundAmount { get; set; }
+                                /// <summary>
+                                /// cod_service_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("cod_service_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("cod_service_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? CodServiceFeeAmount { get; set; }
+                                /// <summary>
+                                /// refund_cod_service_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("refund_cod_service_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("refund_cod_service_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? RefundCodServiceFeeAmount { get; set; }
+                            }
+                            public class ShippingCostBreakdown
+                            {
+                                [Newtonsoft.Json.JsonProperty("actual_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("actual_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ActualShippingFeeAmount { get; set; }
+                                /// <summary>
+                                /// shipping_fee_discount_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ShippingFeeDiscountAmount { get; set; }
+                                /// <summary>
+                                /// customer_paid_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("customer_paid_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("customer_paid_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? CustomerPaidShippingFeeAmount { get; set; }
+                                /// <summary>
+                                /// return_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("return_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("return_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ReturnShippingFeeAmount { get; set; }
+                                /// <summary>
+                                /// replacement_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("replacement_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("replacement_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ReplacementShippingFeeAmount { get; set; }
+                                /// <summary>
+                                /// exchange_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("exchange_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("exchange_shipping_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ExchangeShippingFeeAmount { get; set; }
+                                /// <summary>
+                                /// signature_confirmation_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("signature_confirmation_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("signature_confirmation_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? SignatureConfirmationFeeAmount { get; set; }
+                                /// <summary>
+                                /// shipping_insurance_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("shipping_insurance_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("shipping_insurance_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ShippingInsuranceFeeAmount { get; set; }
+                            }
+                            public class SupplementaryComponent
+                            {
+                                [Newtonsoft.Json.JsonProperty("platform_shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("platform_shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? PlatformShippingFeeDiscountAmount { get; set; }
+                                /// <summary>
+                                /// promo_shipping_incentive_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("promo_shipping_incentive_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("promo_shipping_incentive_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? PromoShippingIncentiveAmount { get; set; }
+                                /// <summary>
+                                /// customer_paid_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("shipping_fee_subsidy_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("shipping_fee_subsidy_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? ShippingFeeSubsidyAmount { get; set; }
+                                /// <summary>
+                                /// return_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("seller_shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("seller_shipping_fee_discount_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? SellerShippingFeeDiscountAmount { get; set; }
+                                /// <summary>
+                                /// customer_shipping_fee_offset_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("customer_shipping_fee_offset_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("customer_shipping_fee_offset_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? CustomerShippingFeeOffsetAmount { get; set; }
+                                /// <summary>
+                                /// exchange_shipping_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("fbm_shipping_cost_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("fbm_shipping_cost_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? FbmShippingCostAmount { get; set; }
+                                /// <summary>
+                                /// fbt_shipping_cost_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("fbt_shipping_cost_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("fbt_shipping_cost_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? FbtShippingCostAmount { get; set; }
+                                /// <summary>
+                                /// fbt_fulfillment_fee_amount
+                                /// </summary>
+                                [Newtonsoft.Json.JsonProperty("fbt_fulfillment_fee_amount")]
+                                [System.Text.Json.Serialization.JsonPropertyName("fbt_fulfillment_fee_amount")]
+                                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                                public decimal? FbtFulfillmentFeeAmount { get; set; }
+                            }
+                        }
+                        /// <summary>
+                        /// 获取或设置 SKU ID。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("sku_id")]
+                        [System.Text.Json.Serialization.JsonPropertyName("sku_id")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.NumericalStringReadOnlyConverter))]
+                        public string SKUId { get; set; } = default!;
+
+                        /// <summary>
+                        /// 获取或设置 SKU 名称。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("sku_name")]
+                        [System.Text.Json.Serialization.JsonPropertyName("sku_name")]
+                        public string SKUName { get; set; } = default!;
+
+                        /// <summary>
+                        /// 获取或设置产品名称。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("product_name")]
+                        [System.Text.Json.Serialization.JsonPropertyName("product_name")]
+                        public string ProductName { get; set; } = default!;
+
+                        /// <summary>
+                        /// 获取或设置数量。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("quantity")]
+                        [System.Text.Json.Serialization.JsonPropertyName("quantity")]
+                        public int Quantity { get; set; }
+                        /// <summary>
+                        /// 获取或设置结算金额。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("settlement_amount")]
+                        [System.Text.Json.Serialization.JsonPropertyName("settlement_amount")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                        public decimal SettlementAmount { get; set; }
+
+                        /// <summary>
+                        /// 获取或设置收入金额。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("revenue_amount")]
+                        [System.Text.Json.Serialization.JsonPropertyName("revenue_amount")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                        public decimal RevenueAmount { get; set; }
+                        /// <summary>
+                        /// 获取或设置运费金额。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("shipping_cost_amount")]
+                        [System.Text.Json.Serialization.JsonPropertyName("shipping_cost_amount")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                        public decimal ShippingCostAmount { get; set; }
+                        /// <summary>
+                        /// 获取或设置运费金额。
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("fee_tax_amount")]
+                        [System.Text.Json.Serialization.JsonPropertyName("fee_tax_amount")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                        public decimal FeeTaxAmount { get; set; }
+                    }
+                }
+
+                /// <summary>
+                /// 获取或设置订单 ID。
+                /// </summary>
+                [Newtonsoft.Json.JsonProperty("order_id")]
+                [System.Text.Json.Serialization.JsonPropertyName("order_id")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.NumericalStringReadOnlyConverter))]
+                public string OrderId { get; set; } = default!;
+
+                /// <summary>
+                /// 获取或设置订单创建时间戳。
+                /// </summary>
+                [Newtonsoft.Json.JsonProperty("order_create_time")]
+                [System.Text.Json.Serialization.JsonPropertyName("order_create_time")]
+                public long OrderCreateTimestamp { get; set; }
+
+                [Newtonsoft.Json.JsonProperty("currency")]
+                [System.Text.Json.Serialization.JsonPropertyName("currency")]
+                public string Currency { get; set; } = default!;
+
+                [Newtonsoft.Json.JsonProperty("revenue_amount")]
+                [System.Text.Json.Serialization.JsonPropertyName("revenue_amount")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                public decimal RevenueAmount { get; set; }
+                [Newtonsoft.Json.JsonProperty("fee_and_tax_amount")]
+                [System.Text.Json.Serialization.JsonPropertyName("fee_and_tax_amount")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                public decimal fee_and_tax_amount { get; set; }
+                [Newtonsoft.Json.JsonProperty("shipping_cost_amount")]
+                [System.Text.Json.Serialization.JsonPropertyName("shipping_cost_amount")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                public decimal shipping_cost_amount { get; set; }
+                [Newtonsoft.Json.JsonProperty("settlement_amount")]
+                [System.Text.Json.Serialization.JsonPropertyName("settlement_amount")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                public decimal settlement_amount { get; set; }
+                /// <summary>
+                /// 获取或设置交易列表。
+                /// </summary>
+                [Newtonsoft.Json.JsonProperty("sku_transactions")]
+                [System.Text.Json.Serialization.JsonPropertyName("sku_transactions")]
+                public Types.Transaction[] TransactionList { get; set; } = default!;
+
+                [Newtonsoft.Json.JsonProperty("total_count")]
+                [System.Text.Json.Serialization.JsonPropertyName("total_count")]
+                [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.TextualNumberReadOnlyConverter))]
+                public long total_count { get; set; }
+            }
+        }
+    }
 }

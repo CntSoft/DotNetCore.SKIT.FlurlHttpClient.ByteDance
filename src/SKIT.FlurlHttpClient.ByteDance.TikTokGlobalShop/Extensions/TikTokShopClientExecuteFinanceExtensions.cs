@@ -29,6 +29,16 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop
 
             return await client.SendFlurlRequesAsJsontAsync<Models.FinanceGetOrderStatementTransactionsResponse>(flurlReq, data: request, cancellationToken: cancellationToken).ConfigureAwait(false);
         }
+        public static async Task<Models.FinanceGetOrderStatementTransactions2501Response> ExecuteFinanceGetOrderStatementTransactions2501Async(this TikTokShopClient client, Models.FinanceGetOrderStatementTransactions2501Request request, CancellationToken cancellationToken = default)
+        {
+            if (client is null) throw new ArgumentNullException(nameof(client));
+            if (request is null) throw new ArgumentNullException(nameof(request));
+
+            IFlurlRequest flurlReq = client
+                .CreateFlurlRequest(request, HttpMethod.Get, "finance", request.ApiVersion, "orders", request.OrderId, "statement_transactions");
+
+            return await client.SendFlurlRequesAsJsontAsync<Models.FinanceGetOrderStatementTransactions2501Response>(flurlReq, data: request, cancellationToken: cancellationToken).ConfigureAwait(false);
+        }
 
         /// <summary>
         /// <para>异步调用 [GET] /finance/{version}/statements/{statement_id}/statement_transactions 接口。</para>

@@ -12,4 +12,13 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.Models
         [System.Text.Json.Serialization.JsonIgnore]
         public string OrderId { get; set; } = string.Empty;
     }
+    public class FinanceGetOrderStatementTransactions2501Request : TikTokShopRequest
+    {
+        /// <summary>
+        /// 获取或设置订单 ID。
+        /// </summary>
+        [Newtonsoft.Json.JsonIgnore]
+        [System.Text.Json.Serialization.JsonIgnore]
+        public string OrderId { get; set; } = string.Empty;
+    }
 }
