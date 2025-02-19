@@ -62,7 +62,7 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.ExtendedSDK.Legacy
 
             if (request.Timestamp is null)
             {
-                request.Timestamp = DateTimeOffset.Now.ToLocalTime().ToUnixTimeSeconds();
+                request.Timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             }
 
             return flurlRequest

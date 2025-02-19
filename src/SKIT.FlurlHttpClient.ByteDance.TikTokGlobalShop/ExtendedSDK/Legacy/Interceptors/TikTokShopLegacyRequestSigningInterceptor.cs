@@ -42,10 +42,10 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.ExtendedSDK.Legacy.Int
                 queryParams.Remove("sign");
 
                 string msgText = string.Format(
-                    "{0}{1}{2}",
-                    arg0: _appSecret,
-                    arg1: context.FlurlCall.HttpRequestMessage.RequestUri.AbsolutePath,
-                    arg2: string.Join(string.Empty, queryParams
+                    "{0}{1}{2}{3}",
+                     _appSecret,
+                    context.FlurlCall.HttpRequestMessage.RequestUri.AbsolutePath,
+                     string.Join(string.Empty, queryParams
                         .ToDictionary(k => k.Name, v => v.Value.ToString())
                         .OrderBy(k => k.Key, StringComparer.Ordinal)
                         .Where(e =>
@@ -60,7 +60,8 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.ExtendedSDK.Legacy.Int
                             return true;
                         })
                         .Select(e => $"{e.Key}{e.Value}")
-                    )
+                    ),
+                      _appSecret
                 );
                 signText = Utilities.HMACUtility.HashWithSHA256(_appSecret, msgText).Value!;
             }
@@ -69,7 +70,7 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.ExtendedSDK.Legacy.Int
                 throw new TikTokShopException("Failed to sign request. Please see the inner exception for more details.", ex);
             }
 
-            context.FlurlCall.Request.SetQueryParam("sign", signText);
+            context.FlurlCall.Request.SetQueryParam("sign", signText.ToLower());
             context.FlurlCall.Request.RemoveQueryParams(ignoreQueryNames);
             return Task.CompletedTask;
         }

@@ -292,6 +292,12 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.ExtendedSDK.Legacy.Mod
                         [Newtonsoft.Json.JsonProperty("settlement_info")]
                         [System.Text.Json.Serialization.JsonPropertyName("settlement_info")]
                         public Types.SettlementInfo SettlementInfo { get; set; } = default!;
+                        /// <summary>
+                        /// fee_type
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("fee_type")]
+                        [System.Text.Json.Serialization.JsonPropertyName("fee_type")]
+                        public int fee_type { get; set; }
                     }
                 }
 
