@@ -1237,7 +1237,13 @@ namespace SKIT.FlurlHttpClient.ByteDance.TikTokGlobalShop.Models
                         [System.Text.Json.Serialization.JsonPropertyName("sku_id")]
                         [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.NumericalStringReadOnlyConverter))]
                         public string SKUId { get; set; } = default!;
-
+                        /// <summary>
+                        /// statement_id
+                        /// </summary>
+                        [Newtonsoft.Json.JsonProperty("statement_id")]
+                        [System.Text.Json.Serialization.JsonPropertyName("statement_id")]
+                        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.Common.NumericalStringReadOnlyConverter))]
+                        public string StatementId { get; set; } = default!;
                         /// <summary>
                         /// 获取或设置 SKU 名称。
                         /// </summary>
